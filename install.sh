@@ -32,7 +32,7 @@ echo "[2] Nvidia Jetson Xavier NX"
 echo "[3] Nvidia Jetson AGX Xavier"
 echo "[4] Nvidia Jetson TX2"
 
-read -p "Enter your selection (Default is 1):" answer 
+read -p "Enter your selection (Default is 1):" answer
 case "$answer" in
   1)
     compute_type="jetson-nano"
@@ -58,7 +58,7 @@ echo "Which robot are you installing?"
 echo "[1] Clearpath Husky"
 echo "[2] Clearpath Jackal"
 
-read -p "Enter your selection (Default is 1):" answer 
+read -p "Enter your selection (Default is 1):" answer
 case "$answer" in
   1)
     platform="husky"
@@ -131,7 +131,7 @@ echo ""
 
 echo "Step 4: Installing ROS prerequisites"
 echo ""
-sudo apt -qq -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install -qq -y python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
 echo "Done: Installing ROS prerequisites"
 echo ""
 
